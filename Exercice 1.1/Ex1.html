@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu de Deviner le Nombre</title>
+    <link rel="stylesheet" href="Ex1.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Bienvenue dans le jeu de deviner le nombre!</h1>
+        <div id="difficulty-selection">
+            <label for="difficulty">Sélectionnez le niveau de difficulté :</label><br>
+            <select id="difficulty">
+                <option value="1">Facile (1-20, 6 tentatives)</option>
+                <option value="2">Intermédiaire (1-50, 8 tentatives)</option>
+                <option value="3">Difficile (1-100, 10 tentatives)</option>
+            </select><br>
+            <button id="start-game-btn">Commencer le jeu</button>
+        </div>
+
+        <div id="game-board" style="display: none;">
+            <p id="message">Bonne chance! Devinez le nombre.</p>
+            <p id="remaining-attempts"></p>
+            <input type="number" id="user-guess" placeholder="Entrez votre nombre">
+            <button id="submit-guess-btn">Soumettre la réponse</button>
+        </div>
+        
+        <div id="new-game" style="display: none;">
+            <p id="new-game-message">Voulez-vous rejouer ?</p>
+            <button id="yes-btn">Oui</button>
+            <button id="no-btn">Non</button>
+        </div>
+    </div>
+
+    <script src="Ex1.js"></script>
+</body>
+</html>
