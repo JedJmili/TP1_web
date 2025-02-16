@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+ol {
+    list-style-type: decimal;
+    padding: 0;
+    width: 280px;
+    margin: auto;
+}
+
+li {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    
+}
